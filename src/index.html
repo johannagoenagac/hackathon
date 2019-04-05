@@ -6,31 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
-
 
 
   <body>
 
     <header>
         
-                <div class="navbar-fixed">
-                     <nav class="navbar">
-                        <div class="nav-wrapper">
-                            <a href="#!" class="brand-logo"><img id="logo" class="responsive-img"src="http://subirimagen.me/uploads/20190124070159.png"></a>
-                            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Busca tu estreno">
-                            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                            <ul class="right hide-on-med-and-down">
-                                <li><a id="start">Inicio</a></li>
-                                <li><a id="movies">Peliculas</a></li>
-                            </ul>
-                        </div>
-                    </nav>
+        <div class="navbar-fixed">
+            <nav class="navbar">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo"><img id="logo" class="responsive-img"src="./style/webImg/logo-lavitrina.png"></a>
+                    <input type="text" id="myInput"  placeholder="Busca tu estreno 2018-2019">
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a id="start">Inicio</a></li>
+                        <li><a id="movies">Películas</a></li>
+                    </ul>
+                </div>
+            </nav>
 
                     <ul class="sidenav" id="mobile-demo">
                         <li><a id="start-1">Inicio</a></li>
-                        <li><a id="movies-1">Peliculas</a></li>  
+                        <li><a id="movies-1">Películas</a></li>  
                     </ul>
         
                 </div>
@@ -44,23 +43,24 @@
         <div class="slider">
             <ul>
             <li>
-                <img src="http://subirimagen.me/uploads/20190123115745.png" alt="">
+                <img id="" src="./style/Imagenes carrusel/imagen1.webp" alt="">
             </li>
 
             <li>
-                <img src="http://subirimagen.me/uploads/20190123115851.png" alt="">
+                <img src="./style/Imagenes carrusel/imagen2.webp" alt="">    
             </li>
             <li>
-                <img src="http://subirimagen.me/uploads/20190123115920.jpg" alt="">
+                <img src="./style/Imagenes carrusel/imagen3.webp" alt="">
+                
             </li>
             <li>
-                <img src="http://subirimagen.me/uploads/20190123115954.jpg" alt="">
+                <img src="./style/Imagenes carrusel/imagen4.webp" alt="">  
             </li>
             </ul>
         </div>
 
         <div class="container">
-            <h5 id="movies-popular">Peliculas Destacadas</h5>
+            <h5 id="movies-popular">Películas Destacadas</h5>
             <section class="popular2"id="popular"></section>
         </div>
         
@@ -76,19 +76,19 @@
                     <div class="input-field col s12 m6">
                         <select id="filter" class="icons">
                             <option value="" disabled selected>Buscar por genero</option>
-                            <option value="28" >Accion</option>
+                            <option value="28" >Acción</option>
                             <option value="12" >Aventuras</option>
-                            <option value="16" >Animacion</option>
+                            <option value="16" >Animación</option>
                             <option value="35" >Comedia</option>
                             <option value="80" >Crimen</option>
                             <option value="18" >Drama</option>
                             <option value="10751" >Familia</option>
-                            <option value="14" >Fantasia</option>
+                            <option value="14" >Fantasía</option>
                             <option value="36" >Historia</option>
                             <option value="27" >Terror</option>
                             <option value="9648" >Misterio</option>
                             <option value="10749" >Romance</option>
-                            <option value="878" >Ciencia ficcion</option>
+                            <option value="878" >Ciencia ficción</option>
                         </select>
                         
                     </div>
@@ -127,12 +127,14 @@
 
     <div id="page6">
 
-        <div  class="flex-info" id="info-trailer">
+        <div id="info-trailer" >
             
-            <div id="trailer"></div> 
+            <div id="trailer" class="col s12 m6">
+                         
+            </div> 
 
             
-            <div id="info-movies">
+            <div id="info-movies" class="col s12 m6">
                 <div id="icons-start">              
                     <i class="material-icons" style="color:#ebc90a">star</i>
                     <i class="material-icons" style="color:#ebc90a">star</i>
@@ -146,7 +148,7 @@
 
                 <div id="site-icons">
                     <a href="https://www.pelispedia.tv/" id="pelispedia"><img class="link-movies" src="http://subirimagen.me/uploads/20190123162204.png" alt=""></a>  
-                    <a href="https://www.cuevana2.com/" id="cuevana"><img class="link-movies" src="http://subirimagen.me/uploads/20190123162223.png" alt=""></a>  
+                    <a href="https://www.cuevana2.com/pelicula/el-grinch/" id="cuevana"><img class="link-movies" src="http://subirimagen.me/uploads/20190123162223.png" alt=""></a>
                     <a href="https://www.cinecalidad.to/" id="cinecalidad"><img class="link-movies" src="http://subirimagen.me/uploads/20190123162244.png" alt=""></a>  
                 </div>
 
@@ -181,7 +183,7 @@
     </div>
    
 
-    <div id="page7" class="row"></div>
+    <div id="page7"></div>
     <div id="root" class="row"></div>
 
 
@@ -189,37 +191,36 @@
         <div class="container">
             <div id="icons-media" class="row">
                 
-             <a href="https://www.instagram.com/la_vitrinamovies/?hl=es-la"><img class="responsive-img" id="instagram-icon" src="http://subirimagen.me/uploads/20190124090646.png" alt=""></a>
-             <a href="https://www.facebook.com/La-Vitrina-2292476871025051/?modal=admin_todo_tour"><img class="responsive-img" id="facebook-icon"src="http://subirimagen.me/uploads/20190124090542.png" alt=""></a>
+             <a href="https://www.instagram.com/la_vitrinamovies/?hl=es-la"><img class="responsive-img" id="instagram-icon" src="./style/webImg/instagram (1).png" alt=""></a>
+             <a href="https://www.facebook.com/La-Vitrina-2292476871025051/?modal=admin_todo_tour"><img class="responsive-img" id="facebook-icon"src="./style/webImg/facebook.png" alt=""></a>
             </div>
         </div>
     </footer>
                            
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-     <script>
-     $(document).ready(function(){
-     $('select').formSelect();
-    });
-    </script>
+  <script>
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+  </script>
 
-    <script>
+<script>
+        $(document).ready(function(){
+        $(".button-collapse").sideNav()
+        });
+</script>
+
+ <script>
      $('#textarea1').val('New Text');
      M.textareaAutoResize($('#textarea1'));
-    </script>
+ </script>
 
-   
+ 
 
-    <script>
-    $(document).ready(function(){
-    $(".button-collapse").sideNav()
-    });
-    </script>
-
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-
-  </body>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
 </html>
